@@ -10,19 +10,19 @@
 #import "cocos2d.h"
 #import "GameplayLayer.h"
 #import "BackgroundLayer.h"
-#import "TurnMenuLayer.h"
+#import "CastleMenuLayer.h"
 
 
 
 @interface GameplayScene: CCScene {
     GameplayLayer *_gplayer;
     BackgroundLayer *_bglayer;
-    TurnMenuLayer *_tmlayer;
+    CastleMenuLayer *_cmlayer;
     BOOL showTurnMenu;
 }
 @property (nonatomic, retain) GameplayLayer *gplayer;
 @property (nonatomic, retain) BackgroundLayer *bglayer;
-@property (nonatomic, retain) TurnMenuLayer *tmlayer;
+@property (nonatomic, retain) CastleMenuLayer *cmlayer;
 
 
 @end

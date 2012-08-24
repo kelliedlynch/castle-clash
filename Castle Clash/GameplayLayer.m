@@ -12,16 +12,13 @@
 @implementation GameplayLayer
 
 // on "init" you need to initialize your instance
--(id) initWithTurnMenu:(TurnMenuLayer *)tmlayer
-//-(id) init
+-(id) initWithCastleMenu:(CastleMenuLayer *)cmlayer
+//- (id) init
 {
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
-	if( (self=[super init] )) {
+	if( ( self=[super init] )) {
 		
-        _tmlayer = tmlayer;
-        
-        
         self.isTouchEnabled = YES;
         
 		// ask director for the window size
@@ -69,20 +66,14 @@
         
 		location = [[CCDirector sharedDirector] convertToGL: location];
         
-        //CCSprite *playerCastleSprite;
-        
         if (CGRectContainsPoint([playerCastleSprite boundingBox], location)) {
             
-            // open menu
-            [_tmlayer showTurnMenu:YES];
-            
-            
-            
-            /*CCSprite *newSprite = [CCSprite spriteWithFile:@"Wall Block Tall.png"];
-             [newSprite setPosition:ccp( 500 , 150 )];
-             //CCSprite *pcs = playerCastleSprite;
-             [self addChild:newSprite];
-             */
+            if([self.parent getChildByTag:1]) {
+                [self.parent removeChildByTag:1 cleanup:YES];
+            } else {
+                [self.parent addChild:[CastleMenuLayer node] z:2 tag:1];
+            }
+
         }
         
 	}

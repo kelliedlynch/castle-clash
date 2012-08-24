@@ -8,15 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "TurnMenuLayer.h"
+#import "CastleMenuLayer.h"
 
 @interface GameplayLayer : CCLayer
 {
     CCSprite *playerCastleSprite;
-    TurnMenuLayer * _tmlayer;
 }
 
-- (id)initWithTurnMenu:(TurnMenuLayer *)tmlayer;
+- (id)initWithCastleMenu:(CastleMenuLayer *)cmlayer;
 
 
 @end

@@ -131,7 +131,7 @@
 		ABC2E17C15E6B8000094EB8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E17B15E6B8000094EB8B /* AppDelegate.m */; };
 		ABC2E18915E6BA9E0094EB8B /* Wall Block Tall.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC2E18815E6BA9E0094EB8B /* Wall Block Tall.png */; };
 		ABC2E18C15E6BB660094EB8B /* GameplayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E18B15E6BB660094EB8B /* GameplayScene.m */; };
-		ABC2E19315E6C5FF0094EB8B /* TurnMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E19215E6C5FF0094EB8B /* TurnMenuLayer.m */; };
+		ABC2E19315E6C5FF0094EB8B /* CastleMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E19215E6C5FF0094EB8B /* CastleMenuLayer.m */; };
 		ABC2E1BB15E6CD570094EB8B /* background-ipad-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC2E1B715E6CD570094EB8B /* background-ipad-hd.png */; };
 		ABC2E1BC15E6CD570094EB8B /* background-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC2E1B815E6CD570094EB8B /* background-ipad.png */; };
 		ABC2E1BD15E6CD570094EB8B /* background-iphone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC2E1B915E6CD570094EB8B /* background-iphone-hd.png */; };
@@ -140,6 +140,7 @@
 		ABC2E1C315E6F2760094EB8B /* menu-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC2E1C215E6F2760094EB8B /* menu-bg.png */; };
 		ABC2E1CA15E6FE1C0094EB8B /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E1C915E6FE1C0094EB8B /* IntroLayer.m */; };
 		ABC2E1CD15E719A70094EB8B /* GameplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E1CC15E719A70094EB8B /* GameplayLayer.m */; };
+		ABC2E1D015E727210094EB8B /* Castle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E1CF15E727200094EB8B /* Castle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -404,8 +405,8 @@
 		ABC2E18815E6BA9E0094EB8B /* Wall Block Tall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wall Block Tall.png"; sourceTree = "<group>"; };
 		ABC2E18A15E6BB660094EB8B /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayScene.h; sourceTree = "<group>"; };
 		ABC2E18B15E6BB660094EB8B /* GameplayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameplayScene.m; sourceTree = "<group>"; };
-		ABC2E19115E6C5FF0094EB8B /* TurnMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnMenuLayer.h; sourceTree = "<group>"; };
-		ABC2E19215E6C5FF0094EB8B /* TurnMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurnMenuLayer.m; sourceTree = "<group>"; };
+		ABC2E19115E6C5FF0094EB8B /* CastleMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastleMenuLayer.h; sourceTree = "<group>"; };
+		ABC2E19215E6C5FF0094EB8B /* CastleMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastleMenuLayer.m; sourceTree = "<group>"; };
 		ABC2E1B715E6CD570094EB8B /* background-ipad-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-ipad-hd.png"; path = "Resources/background-ipad-hd.png"; sourceTree = "<group>"; };
 		ABC2E1B815E6CD570094EB8B /* background-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-ipad.png"; path = "Resources/background-ipad.png"; sourceTree = "<group>"; };
 		ABC2E1B915E6CD570094EB8B /* background-iphone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-iphone-hd.png"; path = "Resources/background-iphone-hd.png"; sourceTree = "<group>"; };
@@ -417,6 +418,8 @@
 		ABC2E1C915E6FE1C0094EB8B /* IntroLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		ABC2E1CB15E719A70094EB8B /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayLayer.h; sourceTree = "<group>"; };
 		ABC2E1CC15E719A70094EB8B /* GameplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameplayLayer.m; sourceTree = "<group>"; };
+		ABC2E1CE15E727200094EB8B /* Castle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Castle.h; sourceTree = "<group>"; };
+		ABC2E1CF15E727200094EB8B /* Castle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Castle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -483,8 +486,10 @@
 				ABC2E1CC15E719A70094EB8B /* GameplayLayer.m */,
 				ABC2E1BF15E6CE110094EB8B /* BackgroundLayer.h */,
 				ABC2E1C015E6CE110094EB8B /* BackgroundLayer.m */,
-				ABC2E19115E6C5FF0094EB8B /* TurnMenuLayer.h */,
-				ABC2E19215E6C5FF0094EB8B /* TurnMenuLayer.m */,
+				ABC2E19115E6C5FF0094EB8B /* CastleMenuLayer.h */,
+				ABC2E19215E6C5FF0094EB8B /* CastleMenuLayer.m */,
+				ABC2E1CE15E727200094EB8B /* Castle.h */,
+				ABC2E1CF15E727200094EB8B /* Castle.m */,
 				ABC2E1C815E6FE1C0094EB8B /* IntroLayer.h */,
 				ABC2E1C915E6FE1C0094EB8B /* IntroLayer.m */,
 				ABC2E00315E6B7FB0094EB8B /* Resources */,
@@ -1043,10 +1048,11 @@
 				ABC2E17915E6B8000094EB8B /* main.m in Sources */,
 				ABC2E17C15E6B8000094EB8B /* AppDelegate.m in Sources */,
 				ABC2E18C15E6BB660094EB8B /* GameplayScene.m in Sources */,
-				ABC2E19315E6C5FF0094EB8B /* TurnMenuLayer.m in Sources */,
+				ABC2E19315E6C5FF0094EB8B /* CastleMenuLayer.m in Sources */,
 				ABC2E1C115E6CE110094EB8B /* BackgroundLayer.m in Sources */,
 				ABC2E1CA15E6FE1C0094EB8B /* IntroLayer.m in Sources */,
 				ABC2E1CD15E719A70094EB8B /* GameplayLayer.m in Sources */,
+				ABC2E1D015E727210094EB8B /* Castle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface TurnMenuLayer : CCLayerColor {
+@interface CastleMenuLayer : CCLayerColor {
 
 
     
 }
 
-- (void)showTurnMenu:(BOOL)show;
+//- (void)showCastleMenu:(BOOL)show;
 
 @end

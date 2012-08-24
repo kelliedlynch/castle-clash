@@ -7,16 +7,13 @@
 //
 
 #import "GameplayScene.h"
-//#import "BackgroundLayer.h"
-//#import "TurnMenuLayer.h"
 
-
-// Create a scene for the Main Menu screen
+// Create the main gameplay scene
 @implementation GameplayScene
 
-@synthesize bglayer = _bglayer;
-@synthesize gplayer = _gplayer;
-@synthesize tmlayer = _tmlayer;
+//@synthesize bglayer = _bglayer;
+//@synthesize gplayer = _gplayer;
+//@synthesize cmlayer = _cmlayer;
 
 - (id)init {
     
@@ -24,12 +21,12 @@
         self.bglayer = [BackgroundLayer node];
         [self addChild:_bglayer z:0];
        
-        self.tmlayer = [TurnMenuLayer node];
-        [self addChild:_tmlayer z:2];
-
-        self.gplayer = [[[GameplayLayer alloc] initWithTurnMenu:self.tmlayer] autorelease];
+        self.gplayer = [[[GameplayLayer alloc] initWithCastleMenu:self.cmlayer] autorelease];
         //self.gplayer = [GameplayLayer node];
         [self addChild:_gplayer z:1];
+        
+        //self.cmlayer = [CastleMenuLayer node];
+        //[self addChild:_cmlayer z:2];
     
     }
     return self;
