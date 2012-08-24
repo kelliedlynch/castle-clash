@@ -1,23 +1,24 @@
 //
-//  IntroLayer.m
-//  Castle Clash
 //
-//  Created by Kellie Lynch on 8/23/12.
-//  Copyright __MyCompanyName__ 2012. All rights reserved.
+// WHAT THE HELL?
+//
+// For some reason, if I get rid of this IntroLayer, my other layers end up
+// off-center. Investigate this later.
+//
 //
 
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "HelloWorldLayer.h"
+#import "GameplayScene.h"
 
 
 #pragma mark - IntroLayer
 
-// HelloWorldLayer implementation
+// IntroLayer implementation
 @implementation IntroLayer
 
-// Helper class method that creates a Scene with the HelloWorldLayer as the only child.
+// Helper class method that creates a Scene with the IntroLayer as the only child.
 +(CCScene *) scene
 {
 	// 'scene' is an autorelease object.
@@ -38,28 +39,19 @@
 {
 	[super onEnter];
 
-	// ask director for the window size
-	CGSize size = [[CCDirector sharedDirector] winSize];
-
-	CCSprite *background;
-	
-	if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ) {
-		background = [CCSprite spriteWithFile:@"Default.png"];
-		background.rotation = 90;
-	} else {
-		background = [CCSprite spriteWithFile:@"Default-Landscape~ipad.png"];
-	}
-	background.position = ccp(size.width/2, size.height/2);
-
-	// add the label as a child to this Layer
-	[self addChild: background];
-	
-	// In one second transition to the new scene
-	[self scheduleOnce:@selector(makeTransition:) delay:1];
+    [[CCDirector sharedDirector] replaceScene:[GameplayScene node]];
+    
 }
 
--(void) makeTransition:(ccTime)dt
+// on "dealloc" you need to release all your retained objects
+- (void) dealloc
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE]];
+	// in case you have something to dealloc, do it in this method
+	// in this particular example nothing needs to be released.
+	// cocos2d will automatically release all the children (Label)
+	
+	// don't forget to call "super dealloc"
+	[super dealloc];
 }
+
 @end
